@@ -17,34 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-def response = WS.sendRequest(findTestObject('create-new-user'))
+def response = WS.sendRequest(findTestObject('put-update'))
 
-WS.verifyResponseStatusCode(response, 201)
+WS.verifyResponseStatusCode(response, 200)
 
-def slurper = new groovy.json.JsonSlurper()
-
-def result = slurper.parseText(response.getResponseBodyContent())
-
-def requestBody = [
-		"name": "morpheus",
-		"job": "leader"
-]
-
-def id = result.id
-assert id != null
-
-def name = result.name
-assert name != 0
-assert name instanceof String
-assert name == "morpheus"
-
-def job = result.job
-assert job != 0
-assert job instanceof String
-assert job == "leader"
-
-def createdAt = result.createdAt
-assert createdAt != 0
-assert createdAt instanceof String
-
-assert name == GlobalVariable.userName

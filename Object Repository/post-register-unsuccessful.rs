@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>post-register-unseccessful</name>
+   <name>post-register-unsuccessful</name>
    <tag></tag>
    <elementGuidId>187d36c8-24ee-42b4-ba70-f4e9cc71bfbb</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
