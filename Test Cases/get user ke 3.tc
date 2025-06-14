@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC - Get User</name>
+   <name>get user ke 3</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>14b25cc9-9946-491a-b026-2a8075d4f21a</testCaseGuid>
+   <testCaseGuid>491dcdb8-98d4-4f40-a1a6-57e8abcf8272</testCaseGuid>
 </TestCaseEntity>
